@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Front Final</title>
+<meta charset="utf-8">
+<meta name="description" content="Este es un documento HTML5">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="misestilos.css">
+<script type="text/javascript" src="js/misFuncionesGames.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header id="cabeceralogo">
+    <div>
+    <h1>Games</h1>
+    </div>
+    </header>
+    <nav id="menuprincipal">
+    <div>
+    <ul>
+        <li><a href="index.html">Principal</a></li>
+        <li><a href="Categorias.html">Categorias</a></li>
+        <li><a href="Games.html">Games</a></li>
+        <li><a href="Clientes.html">Clientes</a></li>
+        <li><a href="Mensajes.html">Mensajes</a></li>
+        <li><a href="Reservaciones.html">Reservaciones</a></li>
+        <li><a href="Reportes.html">Reportes</a></li>
+    </ul>
+    </div>
+    </nav>
+
+    <div class="contenedor2">
+        <label>NAME:</label>
+        <input class="controlGame" type="text" id="name2" placeholder="Ingrese el nombre" ><br>
+        <label>DEVELOPER:</label>
+        <input class="controlGame" type="text" id="developer" placeholder="Ingrese el desarrollador" ><br>
+        <label>YEAR:</label>
+        <input class="controlGame" type="number" id="year" placeholder="Ingrese el año"><br>
+        <label>DESCRIPTION:</label>
+        <input class="controlGame" type="text" id="description2" placeholder="Ingrese la descripcion" ><br>
+        <select id="select-category"></select>
+        <script type="text/javascript">
+            window.onload = autoInicioCategoria();
+        </script>
+
+        <div id="miListaGame"></div>
+        <button class="botonconsultar" onclick="traerInformacionGame()" > Consultar Game</button>
+
+        <button class="botonconsultar" onclick="agregarGame()">Guardar Game</button>
+    </div>
+</body>
+</html>
